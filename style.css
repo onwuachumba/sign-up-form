@@ -4,7 +4,7 @@
 *{
     box-sizing: border-box;
     /* padding: 0; */
-    /* margin: 0; */
+    margin: 0; 
 
 }
 :root{
@@ -73,9 +73,11 @@ body{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 45px;
     line-height: 50px;
     color: white;
+    margin-bottom: 2rem;
+
 
 }
 
@@ -83,6 +85,11 @@ p{
     font-size: var(--font-size);
     opacity: 0.8;
     color: white;
+    font-weight: var(--font-weights-400);
+}
+
+#try{
+    font-size: 14px;
 }
 
 .box{
@@ -102,18 +109,22 @@ p{
     background-color: var(--Blue);
     color: white;
     padding:20px;
+    
 }
 
 input{
     display: block;
     width: 100%;
     padding: 15px 25px;
-    border-radius: 5px;
+    border-radius: 4px;
     border: 1px solid var(--Grayish-blue);
-    font-weight: var(--font-weights-500);
+    font-weight: var(--font-weights-600);
     font-size: 14px;
     font-family: var(--font-family);
 }
+
+
+
 
 input:focus{
     border: 1px solid var(--Grayish-blue);
@@ -174,11 +185,27 @@ small a{
 }
 
 .form-control small{
+    color: var(--Red);
     text-align: right;
     position: absolute;
-    bottom: -20px;
+    bottom: -24px;
     opacity: 0;
     right: 0;
+    border-color: var(--Red);
+}
+
+.form-control.error input{
+}
+
+.form-control img{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.alarm{
+
+    opacity: 0;
+
 }
 
 @media screen and (max-with: 700%){
