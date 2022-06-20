@@ -194,6 +194,7 @@ small a{
 }
 
 .form-control_error {
+    opacity: 0;
     border-color: var(--Red);
 
 }

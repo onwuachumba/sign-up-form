@@ -32,12 +32,16 @@ form.addEventListener('submit',e =>{
 function addErrorTo(field, Message){
     const small = form[field].parentNode.querySelector('small');
     const alarms = form[field].parentNode.querySelectorAll('.alarm');
-    const inputBorder = form[field].parentNode.querySelector('form-control_error');
+    const inputBorders = form[field].parentNode.querySelectorAll('.form-control_error');
     
     
     small.innerText = Message;
     small.style.opacity ='1';
-    inputBorder.style.borderColor = "red";
+    inputBorders.forEach(inputBorder =>{
+        inputBorder.style.opacity="red";
+    }
+
+    ) ;
     alarms.forEach(alarm => {
         alarm.style.opacity = 1;
     });
