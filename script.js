@@ -35,9 +35,9 @@ function addErrorTo(field, Message){
     const inputBorder = form[field].parentNode.querySelector('form-control_error');
     
     
-    small.innerText = Message
-    small.style.opacity ='1'
-    inputBorder.style.borderColor = "red"
+    small.innerText = Message;
+    small.style.opacity ='1';
+    inputBorder.style.borderColor = "red";
     alarms.forEach(alarm => {
         alarm.style.opacity = 1;
     });
