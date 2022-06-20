@@ -29,15 +29,15 @@ form.addEventListener('submit',e =>{
 
 
 });
-// let alarm=document.getElementById("alarm").style.opacity.value;
-// alarm =1
-// console.log(alarm)
 function addErrorTo(field, Message){
     const small = form[field].parentNode.querySelector('small');
     const alarms = form[field].parentNode.querySelectorAll('.alarm');
+    const inputBorder = form[field].parentNode.querySelector('form-control_error');
+    
     
     small.innerText = Message
     small.style.opacity ='1'
+    inputBorder.style.borderColor = "red"
     alarms.forEach(alarm => {
         alarm.style.opacity = 1;
     });

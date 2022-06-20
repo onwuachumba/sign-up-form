@@ -191,10 +191,11 @@ small a{
     bottom: -24px;
     opacity: 0;
     right: 0;
-    border-color: var(--Red);
 }
 
-.form-control.error input{
+.form-control_error {
+    border-color: var(--Red);
+
 }
 
 .form-control img{
