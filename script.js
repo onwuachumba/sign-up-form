@@ -38,7 +38,7 @@ function addErrorTo(field, Message){
     small.innerText = Message;
     small.style.opacity ='1';
     inputBorders.forEach(inputBorder =>{
-        inputBorder.style.opacity="red";
+        inputBorder.style.borderColor="red";
     }
 
     ) ;
