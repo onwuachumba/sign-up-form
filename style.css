@@ -210,7 +210,7 @@ small a{
 
 }
 
-@media screen and (max-with: 700%){
+@media screen and (max-width: 700%){
     h1{
         text-align: center;
     }
